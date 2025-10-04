@@ -14,7 +14,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* FIX: Dropdown hover CSS ko rakha gaya hai desktop ke liye */
+        /* Dropdown hover CSS ko rakha gaya hai desktop ke liye */
         .dropdown:hover .dropdown-menu {
             display: block;
         }
@@ -22,7 +22,7 @@
 </head>
 <body class="bg-slate-50">
 
-    <!-- Professional Navbar -->
+    <!-- Professional Navbar (No changes here) -->
     <nav class="bg-black shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <!-- Logo -->
@@ -33,7 +33,7 @@
                 <span class="text-xl font-bold text-white uppercase tracking-wider">DEALSMARKET</span>
             </a>
             <div class="flex items-center">
-                <!-- FIX: Dropdown ab mobile par click se bhi chalega -->
+                <!-- Dropdown ab mobile par click se bhi chalega -->
                 <div class="dropdown relative">
                     <button id="menu-button" class="text-white bg-gray-800 hover:bg-gray-700 font-semibold py-2 px-4 rounded-lg inline-flex items-center transition-colors duration-300">
                         <span class="mr-1">Menu</span>
@@ -52,7 +52,6 @@
     <!-- New Banner Section -->
     <header class="container mx-auto px-4 pt-6 md:px-8 md:pt-6">
         <div class="relative w-full h-[280px] sm:h-[400px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl">
-            <!-- FIX: Local image ko placeholder se replace kiya gaya hai -->
             <img src="Banner1.webp" alt="Promotional Banner" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center p-4">
                 <h2 class="text-white text-xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight leading-tight">
@@ -71,7 +70,6 @@
     <!-- Main Content -->
     <main class="container mx-auto p-4 md:p-8">
 
-        <!-- Home Page Section (ID 'home' for scrolling) -->
         <!-- iPhone 16 Section -->
         <section id="home" class="mt-12 bg-white p-6 rounded-lg shadow-md">
             <div class="flex flex-col md:flex-row gap-8 items-center">
@@ -79,8 +77,10 @@
                     <img src="iPhone 16.webp" alt="iPhone 16" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">iPhone 16</h2>
-                    <div class="text-gray-600 mb-4">
+                    <!-- FIX: Text size chhota kiya gaya -->
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">iPhone 16</h2>
+                    <!-- FIX: Text size chhota kiya gaya -->
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>Storage:</strong> 128 GB / 256 GB / 512 GB</li>
                             <li><strong>Processor:</strong> A18 chip</li>
@@ -108,23 +108,24 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">
+                <!-- FIX: Text size chhota kiya gaya -->
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <!-- FIX: Text size chhota kiya gaya -->
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">
                     The iPhone 16 brings a refined smartphone experience with powerful performance and advanced features. Powered by the efficient A18 chip, it smoothly handles daily tasks, apps, and games while delivering enhanced Apple Intelligence features. Its 6.1-inch Super Retina XDR display offers bright, vivid visuals for photos and videos. The dual-camera system, featuring a 48MP Main camera and a 12MP Ultra Wide camera, delivers remarkable detail and exceptional low-light performance. With an aluminum frame, Ceramic Shield front, and an intuitive Camera Control button, the iPhone 16 combines durability and convenience. All-day battery life and support for MagSafe and Qi wireless charging make it a reliable companion for everyday use.
                 </p>
             </div>
         </section>
         
         <!-- Samsung Galaxy S25 Ultra Section -->
-        <!-- FIX: Spacing consistent karne ke liye mt-12 add kiya gaya hai -->
         <section class="mt-12 bg-white p-6 rounded-lg shadow-md">
             <div class="flex flex-col md:flex-row gap-8 items-center">
                 <div class="md:w-1/2">
                     <img src="Samsung Galaxy S25 Ultra.webp" alt="Samsung Galaxy S25 Ultra" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Samsung Galaxy S25 Ultra</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Samsung Galaxy S25 Ultra</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 12 GB/16 GB</li>
                             <li><strong>ROM:</strong> 256 GB / 512 GB / 1 TB (UFS 4.0 storage)</li>
@@ -153,8 +154,8 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The Samsung Galaxy S25 Ultra is Samsung’s most powerful flagship of 2025, designed for users who want the absolute best. It runs on the Snapdragon 8 Elite for Galaxy, giving top-tier performance in gaming, multitasking, and AI features. It comes with 12 GB (or 16 GB) RAM and up to 1 TB of UFS 4.0 storage, making it future-proof for heavy users. Its 6.9-inch QHD+ Dynamic AMOLED 2X display is among the brightest and smoothest, with adaptive 1–120 Hz refresh rate and ~2600 nits peak brightness. The quad-camera setup (200 MP main, 50 MP ultra-wide, 50 MP 5x telephoto, 10 MP 3x telephoto) delivers outstanding detail, zoom versatility, and excellent low-light photography, with pro-level video options like HDR10+ and 8K. A 5000 mAh battery ensures full-day use, with 45W wired and fast wireless charging support. Built from titanium and Gorilla Armor 2 glass, it’s tough, IP68 water-resistant, and includes the iconic S Pen, though with fewer remote features than before. Running Android 15 with One UI 7, Samsung promises 7 years of updates, making it one of the longest-supported Android phones. In essence, the S25 Ultra is big, heavy, and expensive, but unmatched in power, display, and cameras — the ultimate choice for those who want the very best Android experience.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The Samsung Galaxy S25 Ultra is Samsung’s most powerful flagship of 2025, designed for users who want the absolute best. It runs on the Snapdragon 8 Elite for Galaxy, giving top-tier performance in gaming, multitasking, and AI features. It comes with 12 GB (or 16 GB) RAM and up to 1 TB of UFS 4.0 storage, making it future-proof for heavy users. Its 6.9-inch QHD+ Dynamic AMOLED 2X display is among the brightest and smoothest. Built from titanium and Gorilla Armor 2 glass, it’s tough, IP68 water-resistant, and includes the iconic S Pen. The S25 Ultra is big, heavy, and expensive, but unmatched in power, display, and cameras.</p>
             </div>
         </section>
 
@@ -165,8 +166,8 @@
                     <img src="OnePlus 13.webp" alt="OnePlus 13 Smartphone" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">OnePlus 13</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">OnePlus 13</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 12 GB / 16 GB / 24 GB LPDDR5X</li>
                             <li><strong>ROM:</strong> 256 GB / 512 GB / 1 TB (UFS 4.0 storage)</li>
@@ -195,8 +196,8 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The OnePlus 13 is OnePlus’s flagship for 2025, designed for power users who demand premium performance. It runs on the Snapdragon 8 Elite (3nm) chipset, offering blazing-fast CPU, GPU, and AI capabilities. Equipped with 12 GB, 16 GB, or 24 GB of LPDDR5X RAM and up to 1 TB of UFS 4.0 storage, it ensures smooth multitasking and ample space for apps and media. The 6.82-inch OLED QHD+ display delivers sharp visuals with HDR10+ support, adaptive 120 Hz refresh rate, and excellent brightness for any lighting condition. Its triple-camera system (50 MP main, 50 MP ultra-wide, 50 MP telephoto with 3x optical zoom) tuned by Hasselblad offers impressive photography and videography, including advanced AI features. A massive 6000 mAh battery supports long usage with 80W wired SUPERVOOC™ charging and 50W wireless AIRVOOC charging. Built with an aluminum alloy frame and Gorilla Glass 7i, it offers IP68 water and dust resistance and a cutting-edge ultrasonic under-display fingerprint sensor. Running OxygenOS 15 based on Android 15 with Google Gemini assistant, the OnePlus 13 promises a smooth experience with 4 years of OS updates and 6 years of security updates. For those seeking a blend of speed, style, and innovation, the OnePlus 13 is a top-tier choice.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The OnePlus 13 is OnePlus’s flagship for 2025, designed for power users who demand premium performance. It runs on the Snapdragon 8 Elite (3nm) chipset, offering blazing-fast capabilities. Equipped with up to 24 GB of RAM and 1 TB of storage, it ensures smooth multitasking. The 6.82-inch OLED QHD+ display delivers sharp visuals with an adaptive 120 Hz refresh rate. Its triple-camera system, tuned by Hasselblad, offers impressive photography. A massive 6000 mAh battery supports long usage with 80W wired and 50W wireless charging. For those seeking speed and innovation, the OnePlus 13 is a top-tier choice.</p>
             </div>
         </section>
 
@@ -207,8 +208,8 @@
                     <img src="Realme GT 7 Pro.webp" alt="Realme GT 7 Pro 5G Smartphone" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Realme GT 7 Pro 5G</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Realme GT 7 Pro 5G</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 12 GB / 16 GB LPDDR5X</li>
                             <li><strong>ROM:</strong> 256 GB / 512 GB / 1 TB (UFS 4.0)</li>
@@ -237,8 +238,8 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The Realme GT 7 Pro 5G is poised to be a "flagship killer," offering top-of-the-line specs at a competitive price. Powered by the formidable Snapdragon 8 Elite processor and up to 16 GB of LPDDR5X RAM, it delivers elite performance for gaming and demanding applications. Its standout feature is the 6.78-inch 1.5K LTPO AMOLED display, which boasts an incredibly bright 6500 nits peak brightness and a fluid 120Hz refresh rate, making it perfect for HDR content and outdoor use. The camera system is equally impressive, featuring a high-quality Sony IMX 882 main sensor and a versatile 50 MP periscope telephoto lens for excellent zoom capabilities. The large 6500 mAh battery combined with 120W SUPERVOOC charging ensures you'll have power all day and can recharge in minutes. With a premium metal and glass build and IP69 rating, the Realme GT 7 Pro 5G is a complete package for users who want premium features without the premium price tag.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The Realme GT 7 Pro 5G is poised to be a "flagship killer," offering top-of-the-line specs at a competitive price. Powered by the Snapdragon 8 Elite processor, it delivers elite performance. Its standout feature is the 6.78-inch 1.5K LTPO AMOLED display, which boasts an incredibly bright 6500 nits peak brightness. The camera system is equally impressive, featuring a high-quality main sensor and a versatile 50 MP periscope telephoto lens. The large 6500 mAh battery combined with 120W SUPERVOOC charging ensures you'll have power all day. The Realme GT 7 Pro 5G is a complete package for users who want premium features without the premium price tag.</p>
             </div>
         </section>
 
@@ -249,8 +250,8 @@
                     <img src="Vivo X200 FE 5G.webp" alt="Vivo X200 FE 5G Smartphone" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Vivo X200 FE 5G</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Vivo X200 FE 5G</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 12 GB / 16 GB LPDDR5X</li>
                             <li><strong>ROM:</strong> 256 GB / 512 GB (UFS 4.0)</li>
@@ -279,8 +280,8 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The Vivo X200 FE 5G is a performance-focused smartphone that offers a balanced and premium experience. It is powered by the MediaTek Dimensity 9400+ chipset, ensuring flagship-level speed for gaming and daily tasks. The device features a vibrant 6.7-inch AMOLED display with a 1.5K resolution and an ultra-smooth 144Hz refresh rate. Its versatile camera setup, led by a 108MP main sensor, captures stunning photos with excellent detail and color accuracy. The 5500 mAh battery provides all-day power, and with 100W FlashCharge, it recharges in a flash. Combining a sleek design with powerful hardware, the Vivo X200 FE is an excellent choice for users looking for a stylish and capable device.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The Vivo X200 FE 5G is a performance-focused smartphone that offers a balanced and premium experience. It is powered by the MediaTek Dimensity 9400+ chipset, ensuring flagship-level speed. The device features a vibrant 6.7-inch AMOLED display with a 1.5K resolution and an ultra-smooth 144Hz refresh rate. Its versatile camera setup, led by a 108MP main sensor, captures stunning photos. The 5500 mAh battery provides all-day power, and with 100W FlashCharge, it recharges in a flash. The Vivo X200 FE is an excellent choice for users looking for a stylish and capable device.</p>
             </div>
         </section>
 
@@ -291,8 +292,8 @@
                     <img src="Redmi 12 5G.webp" alt="Redmi 12 5G Smartphone" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Redmi 12 5G</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Redmi 12 5G</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 4 GB / 6 GB / 8 GB</li>
                             <li><strong>ROM:</strong> 128 GB / 256 GB (UFS 2.2)</li>
@@ -321,8 +322,8 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The Redmi 12 5G brings the next generation of connectivity to an affordable price point. It is powered by the efficient Snapdragon 4 Gen 2 processor, providing smooth performance for everyday use and light gaming. The large 6.79-inch FHD+ display with a 90Hz refresh rate offers an immersive viewing experience. Its 50MP main camera captures clear and detailed photos, and the massive 5000 mAh battery ensures you can go all day without needing to charge. With its premium Crystal Glass design, the Redmi 12 5G looks and feels more expensive than it is, making it a fantastic value-for-money choice.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The Redmi 12 5G brings the next generation of connectivity to an affordable price point. It is powered by the efficient Snapdragon 4 Gen 2 processor, providing smooth performance for everyday use. The large 6.79-inch FHD+ display with a 90Hz refresh rate offers an immersive viewing experience. Its 50MP main camera captures clear and detailed photos, and the massive 5000 mAh battery ensures you can go all day without needing to charge. With its premium Crystal Glass design, the Redmi 12 5G is a fantastic value-for-money choice.</p>
             </div>
         </section>
 
@@ -333,8 +334,8 @@
                     <img src="OPPO F21 Pro 5G.webp" alt="OPPO F21 Pro 5G Smartphone" class="w-full h-auto object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-3">OPPO F21 Pro 5G</h2>
-                    <div class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">OPPO F21 Pro 5G</h2>
+                    <div class="text-gray-600 mb-4 text-sm">
                         <ul class="list-disc list-inside space-y-1">
                             <li><strong>RAM:</strong> 8 GB</li>
                             <li><strong>ROM:</strong> 128 GB</li>
@@ -343,7 +344,6 @@
                             <li><strong>Camera:</strong> Rear: 64MP Main + 2MP Macro + 2MP Monochrome</li>
                             <li><strong>Battery:</strong> 4500 mAh with 33W SUPERVOOC charging</li>
                             <li><strong>Build & extras:</strong> Ultra-Slim Retro Design, Dual Orbit Lights</li>
-                            <!-- FIX: Outdated OS version ko update kiya gaya hai -->
                             <li><strong>Software:</strong> ColorOS 14 based on Android 14</li>
                         </ul>
                     </div>
@@ -364,14 +364,14 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
-                <p class="text-gray-600 leading-relaxed text-justify">The OPPO F21 Pro 5G is a stylish mid-range smartphone that combines aesthetics with solid performance. It features an eye-catching Ultra-Slim Retro Design and unique Dual Orbit Lights around the cameras for notifications. The Snapdragon 695 5G chipset provides reliable speed for social media, streaming, and gaming. Its 6.43-inch AMOLED display offers rich colors and deep blacks, making it great for media consumption. The 64MP main camera captures sharp and vibrant pictures, while the 33W SUPERVOOC charging quickly powers up the 4500 mAh battery. For those who prioritize design and a smooth user experience, the OPPO F21 Pro 5G is a compelling option.</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Detailed explanation</h3>
+                <p class="text-gray-600 leading-relaxed text-justify text-sm">The OPPO F21 Pro 5G is a stylish mid-range smartphone that combines aesthetics with solid performance. It features an eye-catching Ultra-Slim Retro Design and unique Dual Orbit Lights for notifications. The Snapdragon 695 5G chipset provides reliable speed for social media and gaming. Its 6.43-inch AMOLED display offers rich colors, and the 64MP main camera captures sharp pictures. 33W SUPERVOOC charging quickly powers up the 4500 mAh battery. For those who prioritize design, the OPPO F21 Pro 5G is a compelling option.</p>
             </div>
         </section>
 
     </main>
 
-    <!-- Professional Footer -->
+    <!-- Professional Footer (No changes here) -->
     <footer class="bg-black text-gray-300 pt-12 pb-6 mt-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -409,17 +409,15 @@
 
     <!-- JavaScript for Mobile Menu -->
     <script>
-        // Yeh script mobile menu ko click par kholne aur band karne ke liye hai
         document.addEventListener('DOMContentLoaded', function () {
             const menuButton = document.getElementById('menu-button');
             const menuDropdown = document.getElementById('menu-dropdown');
 
             menuButton.addEventListener('click', function (event) {
-                event.stopPropagation(); // Baaki page par click event ko roke
+                event.stopPropagation();
                 menuDropdown.classList.toggle('hidden');
             });
 
-            // Agar menu ke bahar click ho to use band kar de
             document.addEventListener('click', function (event) {
                 if (!menuDropdown.contains(event.target) && !menuButton.contains(event.target)) {
                     menuDropdown.classList.add('hidden');
@@ -430,3 +428,4 @@
 
 </body>
 </html>
+
